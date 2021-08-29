@@ -1,0 +1,6 @@
+TARGETNAME=httpdisk
+TARGETPATH=..\obj\$(DDKBUILDENV)
+TARGETTYPE=DRIVER
+INCLUDES=..\inc;..\..\lib\inc
+TARGETLIBS=..\..\lib\obj\$(DDKBUILDENV)\*\ksocket.lib $(DDK_LIB_PATH)\libcntpr.lib $(DDK_LIB_PATH)\wdmsec.lib
+SOURCES=httpdisk.c httpdisk.rc
